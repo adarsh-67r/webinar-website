@@ -18,6 +18,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 
 .logo {
@@ -36,10 +38,11 @@ nav ul a {
   color: #ccc;
   text-decoration: none;
   font-size: 16px;
+  transition: color 0.2s;
 }
 
 nav ul a:hover {
-  color: white;
+  color: #00b4d8;
 }
 
 /* HERO */
@@ -68,10 +71,13 @@ nav ul a:hover {
   border-radius: 6px;
   text-decoration: none;
   font-size: 16px;
+  transition: background-color 0.2s, transform 0.2s;
+  display: inline-block;
 }
 
 .btn:hover {
   background-color: #0096c7;
+  transform: translateY(-2px);
 }
 
 /* POSTS */
@@ -92,6 +98,12 @@ nav ul a:hover {
   border-radius: 8px;
   padding: 24px;
   margin-bottom: 24px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
 }
 
 .card h3 {
@@ -109,6 +121,11 @@ nav ul a:hover {
   color: #00b4d8;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.2s;
+}
+
+.card a:hover {
+  color: #0096c7;
 }
 
 /* ABOUT */
