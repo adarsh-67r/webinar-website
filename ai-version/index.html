@@ -5,30 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arithi Blog — AI Version</title>
 
-  <!-- Preconnect for faster font load -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <!-- Non-blocking font load (media swap trick) -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&display=swap"></noscript>
 
+  <!-- ai-version has its own isolated stylesheet, no root style.css -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- CUSTOM CURSOR (hidden on touch devices via CSS) -->
   <div class="cursor" id="cursor" aria-hidden="true"></div>
   <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
 
-  <!-- NAVBAR -->
   <nav id="nav">
     <div class="nav-inner">
       <div class="logo">
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-label="Arithi">
-          <rect width="28" height="28" rx="7" fill="rgba(0,180,216,0.15)"/>
-          <path d="M14 4L22 20H6L14 4Z" stroke="#00b4d8" stroke-width="1.8" stroke-linejoin="round"/>
-          <line x1="10" y1="15" x2="18" y2="15" stroke="#00b4d8" stroke-width="1.8"/>
+          <rect width="28" height="28" rx="7" fill="rgba(1,105,111,0.12)"/>
+          <path d="M14 4L22 20H6L14 4Z" stroke="#01696f" stroke-width="1.8" stroke-linejoin="round"/>
+          <line x1="10" y1="15" x2="18" y2="15" stroke="#01696f" stroke-width="1.8"/>
         </svg>
         Arithi<span>Blog</span>
       </div>
@@ -44,7 +40,6 @@
     </div>
   </nav>
 
-  <!-- HERO -->
   <section id="home" class="hero">
     <div class="hero-bg" aria-hidden="true">
       <div class="grid-lines"></div>
@@ -53,7 +48,7 @@
       <div class="particles" id="particles"></div>
     </div>
     <div class="hero-content reveal">
-      <div class="badge"><span class="pulse"></span>India's STEM Platform</div>
+      <div class="badge"><span class="pulse"></span>India’s STEM Platform</div>
       <h1>Welcome to<br><span class="grad-text">Arithi Blog</span></h1>
       <p class="hero-sub">We write about AI, technology, and the future — for the next generation of Indian innovators.</p>
       <div class="hero-actions">
@@ -77,11 +72,10 @@
     </div>
   </section>
 
-  <!-- POSTS -->
   <section id="posts" class="posts">
     <div class="section-header reveal">
       <p class="sec-tag">// Latest Posts</p>
-      <h2>What We're <span class="grad-text">Talking About</span></h2>
+      <h2>What We’re <span class="grad-text">Talking About</span></h2>
     </div>
     <div class="cards-grid">
       <article class="card reveal" data-delay="0">
@@ -123,13 +117,12 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
   <section id="about" class="about reveal">
     <div class="about-inner">
       <div class="about-text">
         <p class="sec-tag">// About Us</p>
-        <h2>India's <span class="grad-text">STEM Platform</span></h2>
-        <p class="about-desc">India's STEM learning and competitions platform for students.</p>
+        <h2>India’s <span class="grad-text">STEM Platform</span></h2>
+        <p class="about-desc">India’s STEM learning and competitions platform for students.</p>
         <ul class="about-list" role="list">
           <li><span class="check" aria-hidden="true">✦</span> AI &amp; technology education</li>
           <li><span class="check" aria-hidden="true">✦</span> STEM competitions &amp; hackathons</li>
@@ -146,12 +139,11 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
       <div class="footer-logo">
         Arithi<span>Blog</span>
-        <p>India's STEM learning platform.</p>
+        <p>India’s STEM learning platform.</p>
       </div>
       <nav class="footer-links" aria-label="Footer navigation">
         <a href="#home">Home</a>
