@@ -3,308 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arithi × AI Webinar — Blog</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <title>Arithi Blog</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav class="nav" id="nav">
-    <div class="nav-logo">
-      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-label="Arithi">
-        <rect x="1" y="1" width="24" height="24" rx="6" fill="rgba(34,211,238,.12)"/>
-        <path d="M13 5L19.5 19H6.5L13 5Z" stroke="#22d3ee" stroke-width="1.8" stroke-linejoin="round"/>
-        <line x1="9.5" y1="14.5" x2="16.5" y2="14.5" stroke="#22d3ee" stroke-width="1.8"/>
-      </svg>
-      Arithi <span class="accent">×</span> AI
-    </div>
-    <div class="nav-links" id="navLinks">
-      <a href="#blog">Blog</a>
-      <a href="#agenda">Agenda</a>
-      <a href="#notebooklm">NotebookLM</a>
-      <a href="#prompt">AI Prompt</a>
-      <a href="#agenda" class="nav-cta">Join Webinar</a>
-    </div>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">Arithi Blog</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#posts">Posts</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
   </nav>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero-grid-bg"></div>
-    <div class="hero-glow-1"></div>
-    <div class="hero-glow-2"></div>
-    <div class="hero-inner">
-      <div class="hero-badge"><span class="blink"></span>Live Webinar &middot; Class 11 &amp; 12</div>
-      <h1>The Age of<br><span class="grad">Artificial Intelligence</span></h1>
-      <p class="hero-sub">
-        A live session by Arithi &mdash; exploring AI, demoing NotebookLM, and showing you how a website is born: by hand and by a single prompt.
-      </p>
-      <div class="hero-meta">
-        <span class="hero-meta-item">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="3" y="4" width="18" height="18" rx="2"/>
-            <line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/>
-            <line x1="3" y1="10" x2="21" y2="10"/>
-          </svg> June 2026
-        </span>
-        <span class="hero-meta-item">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
-          </svg> ~90 Minutes
-        </span>
-        <span class="hero-meta-item">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-            <circle cx="9" cy="7" r="4"/>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-          </svg> Class 11 &amp; 12
-        </span>
-      </div>
-    </div>
-    <div class="hero-scroll">
-      <span>SCROLL</span>
-      <svg width="16" height="20" viewBox="0 0 16 20" fill="none">
-        <rect x="5" y="1" width="6" height="10" rx="3" stroke="currentColor" stroke-width="1.5"/>
-        <line x1="8" y1="5" x2="8" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        <polyline points="4,15 8,19 12,15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
+  <section id="home" class="hero">
+    <h1>Welcome to Arithi Blog</h1>
+    <p>We write about AI, technology, and the future.</p>
+    <a href="#posts" class="btn">Read Posts</a>
   </section>
 
-  <hr class="divider">
+  <!-- BLOG POSTS -->
+  <section id="posts" class="posts">
+    <h2>Latest Posts</h2>
 
-  <!-- BLOG -->
-  <section class="section reveal" id="blog">
-    <p class="sec-label">// Webinar Blog</p>
-    <h2 class="sec-title">What We're Talking About</h2>
-    <p class="sec-sub">Three reads to get you ready before the session &mdash; or to revisit after.</p>
-
-    <div class="featured reveal">
-      <div class="featured-visual">🤖</div>
-      <div class="featured-body">
-        <span class="featured-label">// Featured Post</span>
-        <span class="blog-tag tag-ai">AI Overview</span>
-        <h2>What is Artificial Intelligence &mdash; Really?</h2>
-        <p>Beyond the buzzwords: how machine learning, neural networks, and LLMs actually work, explained for students encountering AI for the first time.</p>
-        <a href="#agenda" class="btn-primary">
-          Read in Session
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-            <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
-          </svg>
-        </a>
-      </div>
+    <div class="card">
+      <h3>What is Artificial Intelligence?</h3>
+      <p>AI is the ability of a computer to think and learn. It powers voice assistants, recommendation systems, and much more.</p>
+      <a href="#">Read more &rarr;</a>
     </div>
 
-    <div class="blog-grid">
-      <article class="blog-card reveal reveal-d1">
-        <div class="blog-card-thumb card-2-bg">🗒️</div>
-        <div class="blog-card-body">
-          <span class="blog-tag tag-tool">Tool Spotlight</span>
-          <h3>NotebookLM: Your AI Study Partner</h3>
-          <p>Upload a PDF, ask it anything, get an audio podcast of your textbook. Google's free research tool is a game-changer for students.</p>
-          <div class="blog-card-foot">
-            <span>8 min read</span>
-            <span class="read-more">Read more
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
-              </svg>
-            </span>
-          </div>
-        </div>
-      </article>
-      <article class="blog-card reveal reveal-d2">
-        <div class="blog-card-thumb card-3-bg">🌐</div>
-        <div class="blog-card-body">
-          <span class="blog-tag tag-web">Web Dev</span>
-          <h3>Building a Website &mdash; Manually vs. AI Prompt</h3>
-          <p>First we type every line of HTML and CSS by hand. Then we paste one prompt and watch AI build the same page in seconds. Which is better?</p>
-          <div class="blog-card-foot">
-            <span>10 min read</span>
-            <span class="read-more">Read more
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
-              </svg>
-            </span>
-          </div>
-        </div>
-      </article>
-      <article class="blog-card reveal reveal-d3">
-        <div class="blog-card-thumb card-1-bg">🚀</div>
-        <div class="blog-card-body">
-          <span class="blog-tag tag-ai">Career &amp; Future</span>
-          <h3>AI and Your Career &mdash; What Class 12 Students Should Know</h3>
-          <p>The skills that matter, the fields being transformed, and why learning AI tools today gives you a head start on tomorrow.</p>
-          <div class="blog-card-foot">
-            <span>6 min read</span>
-            <span class="read-more">Read more
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
-              </svg>
-            </span>
-          </div>
-        </div>
-      </article>
+    <div class="card">
+      <h3>How to Use NotebookLM</h3>
+      <p>NotebookLM is a free tool by Google that lets you upload your study material and ask questions about it instantly.</p>
+      <a href="#">Read more &rarr;</a>
     </div>
+
+    <div class="card">
+      <h3>Building a Website from Scratch</h3>
+      <p>Every website starts with HTML for structure, CSS for style, and JavaScript for interactivity. That's all you need to begin.</p>
+      <a href="#">Read more &rarr;</a>
+    </div>
+
   </section>
 
-  <hr class="divider">
-
-  <!-- AGENDA -->
-  <section class="section reveal" id="agenda">
-    <p class="sec-label">// Session Schedule</p>
-    <h2 class="sec-title">The Agenda</h2>
-    <p class="sec-sub">A 90-minute journey through AI &mdash; no prior knowledge needed.</p>
-    <div class="timeline">
-      <div class="tl-item">
-        <div class="tl-left"><span class="tl-time">30 min</span><div class="tl-line"></div></div>
-        <div class="tl-card">
-          <span class="blog-tag tag-ai" style="margin-bottom:var(--sp3)">AI Fundamentals</span>
-          <h3>The Big Picture: What Is AI?</h3>
-          <p>Machine learning, neural networks, LLMs, generative AI &mdash; and how they're reshaping every industry around you.</p>
-          <p class="tl-speaker">🎤 Speaker 1</p>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-left"><span class="tl-time">20 min</span><div class="tl-line"></div></div>
-        <div class="tl-card">
-          <span class="blog-tag tag-tool" style="margin-bottom:var(--sp3)">Tool Demo</span>
-          <h3>NotebookLM &mdash; Live Demo</h3>
-          <p>Upload a study document live, ask it questions, generate an audio podcast on the fly. Free, easy, and incredibly useful for JEE/NEET prep.</p>
-          <p class="tl-speaker">🎤 Adarsh</p>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-left"><span class="tl-time">30 min</span><div class="tl-line"></div></div>
-        <div class="tl-card">
-          <span class="blog-tag tag-web" style="margin-bottom:var(--sp3)">Hands-On</span>
-          <h3>Build a Website &mdash; Two Ways</h3>
-          <p>Manual HTML + CSS first, then the same result from a single AI prompt. You'll see exactly what AI can and can't replace.</p>
-          <p class="tl-speaker">🎤 Adarsh</p>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-left"><span class="tl-time">10 min</span><div class="tl-line"></div></div>
-        <div class="tl-card">
-          <span class="blog-tag" style="background:rgba(251,191,36,.1);color:#fbbf24;margin-bottom:var(--sp3)">Open Floor</span>
-          <h3>Q&amp;A + Resources</h3>
-          <p>Ask anything. We'll share a curated list of free AI tools and learning resources you can start using today.</p>
-          <p class="tl-speaker">🎤 Both Speakers</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider">
-
-  <!-- NOTEBOOKLM -->
-  <section class="section reveal" id="notebooklm">
-    <p class="sec-label">// Tool Spotlight</p>
-    <h2 class="sec-title">NotebookLM Deep Dive</h2>
-    <p class="sec-sub">Google's free AI research tool &mdash; built for students.</p>
-    <div class="demo-layout">
-      <div class="demo-text">
-        <h2>Your Personal AI Study Buddy</h2>
-        <p>NotebookLM lets you upload PDFs, textbook chapters, YouTube videos, and your own notes &mdash; then chat with all of them as if they were one intelligent document. It generates audio summaries, study guides, and timeline visualisations, all grounded in your uploaded sources.</p>
-        <ul class="checklist">
-          <li><span class="check-icon">✓</span> Upload any PDF, Google Doc, or YouTube link</li>
-          <li><span class="check-icon">✓</span> Generate a two-host AI podcast from your notes</li>
-          <li><span class="check-icon">✓</span> Ask &ldquo;make me 10 quiz questions on Chapter 4&rdquo;</li>
-          <li><span class="check-icon">✓</span> Get mind-maps and study outlines in one click</li>
-          <li><span class="check-icon">✓</span> 100% free with any Google account</li>
-        </ul>
-      </div>
-      <div class="terminal">
-        <div class="term-bar">
-          <div class="term-dots"><div class="td td-r"></div><div class="td td-y"></div><div class="td td-g"></div></div>
-          <span class="term-title">notebooklm &mdash; live demo</span>
-        </div>
-        <div class="term-body">
-          <div><span class="t-prompt">📄 Source:</span> <span class="t-out">Chapter5_Thermodynamics.pdf</span></div>
-          <div class="t-dim">──────────────────────────────────</div>
-          <div><span class="t-prompt">You &gt;</span> <span class="t-out">Explain entropy simply</span></div>
-          <div><span class="t-prompt">AI &nbsp;&gt;</span></div>
-          <div class="t-out">&nbsp;&nbsp;Think of entropy as disorder.</div>
-          <div class="t-out">&nbsp;&nbsp;Tidy room &rarr; low entropy.</div>
-          <div class="t-out">&nbsp;&nbsp;Messy room &rarr; high entropy.</div>
-          <div class="t-out">&nbsp;&nbsp;Nature always trends toward mess.</div>
-          <div class="t-dim">──────────────────────────────────</div>
-          <div><span class="t-prompt">You &gt;</span> <span class="t-out">Generate quiz questions</span></div>
-          <div><span class="t-hl">✨ Audio Podcast available</span> <span class="t-dim">[2 min]</span></div>
-          <div><span class="t-hl">📋 Study Guide generated</span></div>
-          <div><span class="t-prompt">&gt;</span> <span class="term-cursor"></span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider">
-
-  <!-- PROMPT SECTION -->
-  <section class="prompt-wrap" id="prompt">
-    <div class="prompt-inner">
-      <p class="sec-label">// The AI Prompt</p>
-      <h2 class="sec-title" style="font-size:var(--text-xl);margin-bottom:var(--sp4)">Build a Website With One Prompt</h2>
-      <p class="sec-sub">Copy this into ChatGPT, Gemini, or any AI assistant &mdash; no prior coding needed.</p>
-      <div class="prompt-box" id="promptText"><span class="pk">Create a complete single-page blog website</span> using only HTML, CSS, and JavaScript &mdash; no frameworks or external libraries.
-
-<span class="pk">Pages/Sections:</span>
-<span class="pv">1. A sticky navigation bar with the site name and smooth scroll links (Home, Blog, About, Contact)
-2. A hero section with a bold headline, short description, and a "Read Blog" CTA button
-3. A blog posts section with 3 article cards &mdash; each card has a category tag, title, excerpt, read-time, and "Read more" arrow
-4. An About section with a short paragraph and an author blurb
-5. A contact section with a simple form (name, email, message + submit button)
-6. A minimal footer with the site name, nav links, and a copyright line</span>
-
-<span class="pk">Design requirements:</span>
-<span class="pv">- Dark theme: deep navy/black (#09090f) background with slightly lighter card surfaces
-- Accent color: bright cyan (#22d3ee) for headings, links, tags, hover states, and buttons
-- Font: Google Fonts &mdash; Space Grotesk (load via &lt;link&gt;)
-- Smooth CSS hover transitions on all cards: lift (translateY(-4px)) + glow border
-- Subtle grid background pattern on the hero using CSS background-image with linear-gradient
-- Two radial gradient glows (cyan + purple) in the hero for depth
-- Animated gradient text on the hero headline (&mdash;webkit-background-clip: text)
-- Fully responsive &mdash; single column on mobile, multi-column on desktop
-- Scroll-reveal animation: sections fade up when entering the viewport (use IntersectionObserver)
-- Animated blinking dot in the hero badge</span>
-
-<span class="pk">Technical rules:</span>
-<span class="pv">- Single self-contained .html file &mdash; all CSS inside &lt;style&gt;, all JS inside &lt;script&gt;
-- No &lt;img&gt; tags &mdash; use CSS gradients and emoji characters for visual interest
-- Working hamburger menu for mobile that opens/closes the nav
-- Smooth scroll on all anchor links
-- All interactive elements have visible :hover and :focus-visible states</span>
-
-<span class="pk">Output:</span> One complete .html file, ready to open directly in a browser.</div>
-      <button class="copy-btn" id="copyBtn" onclick="copyPrompt()">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <rect x="9" y="9" width="13" height="13" rx="2"/>
-          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-        </svg>
-        Copy Prompt
-      </button>
-    </div>
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Arithi is a student-run tech company from NIT Rourkela. We love AI, design, and building cool things.</p>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer-inner">
-      <div>
-        <div class="footer-logo">Arithi <span>×</span> AI</div>
-        <p style="font-size:var(--text-xs);color:var(--tx-faint);margin-top:var(--sp2)">School Webinar &middot; June 2026</p>
-      </div>
-      <div class="footer-links">
-        <a href="#blog">Blog</a>
-        <a href="#agenda">Agenda</a>
-        <a href="#notebooklm">NotebookLM</a>
-        <a href="#prompt">Prompt</a>
-      </div>
-      <p class="footer-copy">&copy; 2026 Arithi. Built with HTML, CSS &amp; curiosity.</p>
-    </div>
+    <p>&copy; 2026 Arithi. Made with HTML, CSS &amp; curiosity.</p>
   </footer>
 
   <script src="script.js"></script>
